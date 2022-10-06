@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>RxJS Playground</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="my-4">RxJS Playground</h2>
+      <button id="hello">Click me!</button>
+      <button id="trigger">Trigger me!</button>
+    </div>
+    <div class="container">
+      <h2 class="my-4">Temp controller</h2>
+      <input id="temperature-input" type="number" placeholder="Temperature" />
+      <select id="conversion-dropdown">
+        <option value="">Choose conversion</option>
+        <option value="c-to-f">Celcius to Fahrenheit</option>
+        <option value="f-to-c">Fahrenheit to Celcius</option>
+      </select>
+      <div id="result-text"></div>
+    </div>
+    <div class="container">
+      <input type="range" id="slider" min="1" max="25" />
+    </div>
+
+    <div class="container">
+      <input type="text" id="endpoint"  />
+      <button id="fetch">Fetch</button>
+    </div>
+
+    <div class="container">
+      <input type="text" id="emitInput"  />
+      <button id="emit">Emit</button>
+      <button id="subscribe">Subscribe</button>
+    </div>
+
+
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand">Logged in: <span id="logged-in"></span></span>
+    </nav>
+    
+    <div class="container">
+      <div class="my-4 form-inline">
+        <button id="login" class="btn btn-primary mr-1">
+          Login
+        </button>
+        <button id="logout" class="btn btn-primary">
+          Logout
+        </button>
+      </div>
+    
+      <button id="print-state" class="btn btn-secondary">
+        Print state
+      </button>
+    </div>
+  </body>
+</html>
